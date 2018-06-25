@@ -1,5 +1,5 @@
 # Image-Based-Height-Detection
-Recognize height from Python
+Recognize height from Image
 
 ## About project
  * There are 2 API's developed as a part of this project
@@ -11,6 +11,7 @@ Requirements:
 * python 3+
 * numpy
 * scipy
+* imutils
 * django
 * django rest framework
 * coreapi (for api documentation)
@@ -19,7 +20,7 @@ Requirements:
 ## Instruction to run project
 
 * Save project to local directory
-* Go to project folder i.e cd facecognition and execute below command
+* Go to project folder i.e cd Image-Based-Height-Detection and execute below command
 * python manage.py runserver 0.0.0.0:8001
 
 
@@ -32,7 +33,7 @@ https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiDz
 #### Training the faces(image encoding)
 ![alt text](https://github.com/ananthkhegde/Image-Based-Height-Detection/blob/master/assets/restexample.png)
 * POST /detectheight/
- * Encodes Face in an Image and saves it in database and returns response message
+ * Returns height in cms from image
    * Request:
       * Request Type -- multipart/form-data
       * parameters (key value pair)
